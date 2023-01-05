@@ -25,7 +25,7 @@ export default function HashScreen() {
   return (
     <Layout title="Hash">
       <form className="mx-auto max-w-screen-lg">
-        <h1 className="text-3xl mb-4 font-bold"> Hash (해시함수)</h1>
+        <h1 className="text-3xl mb-4 font-bold"> Hash (Hash funksiyasi)</h1>
 
         <div className="mb-4 flex flex-row">
           <div className="basis-1/2">
