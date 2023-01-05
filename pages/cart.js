@@ -26,10 +26,10 @@ function CartScreen() {
 
   return (
     <Layout title="Shopping Cart">
-      <h1 className="mb-4 text-xl">Shopping Cart</h1>
+      <h1 className="mb-4 text-xl">Savat</h1>
       {cartItems.length === 0 ? (
         <div>
-          Cart is Empty. <Link href="/"> Go Shopping </Link>{' '}
+          Savat bo'sh. <Link href="/"> Savdoga marhamat </Link>{' '}
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">
@@ -37,10 +37,10 @@ function CartScreen() {
             <table className="min-w-full">
               <thead className="border-b">
                 <tr>
-                  <th className="p-5 text-left"> Item </th>
-                  <th className="p-5 text-right"> Quantity </th>
-                  <th className="p-5 text-right"> Price </th>
-                  <th className="p-5 "> Action </th>
+                  <th className="p-5 text-left"> Maxsulot </th>
+                  <th className="p-5 text-right"> Miqdori </th>
+                  <th className="p-5 text-right"> Narx </th>
+                  <th className="p-5 "> Olib tashlash </th>
                 </tr>
               </thead>
               <tbody>
@@ -89,7 +89,7 @@ function CartScreen() {
             <ul>
               <li>
                 <div className="pb-3 text-xl">
-                  Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}) : $
+                  Hammasi ({cartItems.reduce((a, c) => a + c.quantity, 0)}) : $
                   {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
                 </div>
               </li>

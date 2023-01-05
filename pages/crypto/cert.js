@@ -23,7 +23,7 @@ export default function CertScreen() {
 
   const [serial, setSerial] = useState(101)
   const [cn, setCn] = useState(userEmail)
-  const [country, setCountry] = useState('KR')
+  const [country, setCountry] = useState('UZB')
   const [state, setState] = useState('Gyeonggi-do')
   const [locality, setLocality] = useState('Goyang-si')
   const [org, setOrg] = useState('Joongbu Univ.')
@@ -47,7 +47,7 @@ export default function CertScreen() {
   }
 
   const genCert = async () => {
-    // 서버에 요청하여 서버가 발급하는 인증서를 받아옴
+    // Server tomonidan berilgan sertifikatni olish uchun serverdan so'ralgan
     await axios
       .post('/api/crypto/cert', {
         serial,
@@ -83,13 +83,14 @@ export default function CertScreen() {
     <Layout title="Cert">
       <form className="mx-auto max-w-screen-lg">
         <h1 className="text-3xl mb-4 font-bold">
-          X.509 Certificate (인증서 발급 및 활용)
+          X.509 Certificate (Sertifikat berish va utilizatsiya qilish)
         </h1>
 
         <div className="mb-4 ">
           <p>
-            인증서란 개인의 공개키와 개인의 인증정보에 대해 인증기관이 서명하여
-            발급하는 문서이다.
+            Guvohnoma — shaxsning ochiq kaliti va shaxsiy shaxsni tasdiqlovchi
+            ma'lumotlari sertifikatlashtirish organi tomonidan imzolangan
+            guvohnoma. chiqariladigan hujjatdir.
           </p>
           <div className="mb-4 flex flex-row">
             <div className="basis-1/2 mx-2">
@@ -136,13 +137,13 @@ export default function CertScreen() {
             type="button"
             onClick={keyGen}
           >
-            RSA key generation (RSA 키 생성)
+            RSA key generation (RSA Kalitni yaratish)
           </button>
         </div>
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Public Key (공개키)
+            Public Key (Ochiq kalit)
           </label>
           <textarea
             type="text"
@@ -158,7 +159,7 @@ export default function CertScreen() {
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Private Key (개인키)
+            Private Key (Shaxsiy kalit)
           </label>
           <textarea
             type="text"
@@ -194,7 +195,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="cn" className=" font-bold">
-                Common Name (이름)
+                Common Name (Ism)
               </label>
             </div>
             <div className="basis-1/2">
@@ -212,7 +213,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="country" className=" font-bold">
-                Country (국가)
+                Country (mamlakat)
               </label>
             </div>
             <div className="basis-1/2">
@@ -230,7 +231,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="state" className=" font-bold">
-                State (광역시도)
+                State (Metropolitan City)
               </label>
             </div>
             <div className="basis-1/2">
@@ -248,7 +249,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="locality" className=" font-bold">
-                Locality (시군)
+                Locality (Shahar tumani)
               </label>
             </div>
             <div className="basis-1/2">
@@ -266,7 +267,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="org" className=" font-bold">
-                Organization (기관)
+                Organization (traxeya)
               </label>
             </div>
             <div className="basis-1/2">
@@ -284,7 +285,7 @@ export default function CertScreen() {
           <div className="flex flex-row mb-2">
             <div className="basis-1/2">
               <label htmlFor="orgUnit" className="mb-3 font-bold">
-                Organizational Unit (부서)
+                Organizational Unit (kafedrasi)
               </label>
             </div>
             <div className="basis-1/2">
@@ -347,7 +348,7 @@ export default function CertScreen() {
             type="button"
             onClick={verifyCert}
           >
-            Verification (인증서 유효성 검증)
+            Verification (Sertifikatning haqiqiyligi)
           </button>
         </div>
 

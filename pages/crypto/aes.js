@@ -15,7 +15,7 @@ export default function AESScreen() {
   const [iv, setIv] = useState('')
   const [ivHex, setIvHex] = useState('')
   const [plaintext, setPlaintext] = useState(
-    'Hello world - 헬로월드 - 全国の新たな感染者 - 备孕者可以接种新冠疫苗'
+    'Hello world - 헬로월드 - 全国の新たな感染者 - 备孕者可以接种新冠疫苗 - Salom dunyo'
   )
   const [ciphertext, setCiphertext] = useState('')
   const [ciphertextHex, setCiphertextHex] = useState('')
@@ -75,14 +75,18 @@ export default function AESScreen() {
   return (
     <Layout title="AES">
       <form className="mx-auto max-w-screen-lg">
-        <h1 className="text-3xl mb-4 font-bold">AES (대칭키 암호화)</h1>
+        <h1 className="text-3xl mb-4 font-bold">
+          AES (Simmetrik kalit shifrlash)
+        </h1>
 
         <div className="mb-4 ">
           <p>
-            대칭키 암호는 암호화 알고리즘과 복호화 알고리즘에서 동일한 키를
-            사용하는 알고리즘이다. 송신자는 일반적으로 난수생성함수를 이용하여
-            임의로 생성한 키를 사용하여 암호화하며 송신자는 이 키를 수신자에게
-            안전하게 전달해야 한다.
+            Simmetrik kalit shifr shifri shifrlash algoritmi va deshifrlash
+            algoritmida bir xil kalit hisoblanadi. foydalanish algoritmi
+            hisoblanadi. Jo'natuvchi umuman tasodifiy son avlod funksiyasini
+            qo'llaydi U tasodifiy hosil bo'lgan kalit yordamida shifrlanadi, uni
+            yuboruvchi qabul qiluvchiga beradi Eson-omon etkazib berilishi
+            kerak.
           </p>
           <div className="mx-auto px-20">
             <Image src={symmetricPic} alt="AES" />
@@ -163,7 +167,7 @@ export default function AESScreen() {
             type="button"
             onClick={randomKey}
           >
-            Random key generation (난수 키 생성)
+            Random key generation (Tasodifiy kalit hosil qilish)
           </button>
         </div>
 
@@ -189,7 +193,7 @@ export default function AESScreen() {
             type="button"
             onClick={encryptHandler}
           >
-            Encrypt (암호화)
+            Encrypt (shifrlash)
           </button>
         </div>
 
@@ -215,7 +219,7 @@ export default function AESScreen() {
             type="button"
             onClick={decryptHandler}
           >
-            Decrypt (복호화)
+            Decrypt (Shifrlash)
           </button>
         </div>
 

@@ -65,22 +65,9 @@ export default function LoginScreen() {
     }
   }
 
-  const kakaoLoginHandler = async () => {
+  const facebookLoginHandler = async () => {
     try {
-      const result = await signIn('kakao', {
-        redirect: false,
-      })
-      if (result.error) {
-        toast.error(result.error)
-      }
-    } catch (error) {
-      toast.error(getError(error))
-    }
-  }
-
-  const naverLoginHandler = async () => {
-    try {
-      const result = await signIn('naver', {
+      const result = await signIn('facebook', {
         redirect: false,
       })
       if (result.error) {
@@ -99,7 +86,7 @@ export default function LoginScreen() {
       >
         <h1 className="mb-4 text-xl">Login</h1>
 
-        <div className="bg-blue-300 p-5 mb-2">
+        <div className=" p-5 mb-2">
           <div className="mb-4">
             <label htmlFor="email">Email</label>
             <input
@@ -147,10 +134,10 @@ export default function LoginScreen() {
           </div>
 
           <div className="mb-4">
-            Don&apos;t have an account? <Link href="register">Register</Link>
+            Akauntiz yuqmi? <Link href="register">Ro'yxtdan o'ting</Link>
           </div>
         </div>
-        <div className="p-5 bg-slate-500 rounded-lg">
+        <div className="p-5 rounded-lg">
           <div className="mb-4">
             <button
               className="primary-button w-full"
@@ -175,19 +162,9 @@ export default function LoginScreen() {
             <button
               className="primary-button w-full"
               type="button"
-              onClick={kakaoLoginHandler}
+              onClick={facebookLoginHandler}
             >
-              카카오 Login
-            </button>
-          </div>
-
-          <div className="mb-4">
-            <button
-              className="primary-button w-full"
-              type="button"
-              onClick={naverLoginHandler}
-            >
-              네이버 Login
+              Facebook Login
             </button>
           </div>
         </div>

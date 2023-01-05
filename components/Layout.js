@@ -27,7 +27,7 @@ export default function Layout({ title, children }) {
   return (
     <div>
       <Head>
-        <title> {title ? title + ' - NextShop' : 'NextShop'} </title>
+        <title> {title ? title + ' - CoffeeShop' : 'CoffeeShop'} </title>
         <meta name="description" content="Nextjs ecommerce" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -38,12 +38,14 @@ export default function Layout({ title, children }) {
         <header>
           <nav className="flex flex-row h-12 items-center px-4 justify-between shadow-md bg-slate-200">
             <Link href="/">
-              <a className="text-lg font-bold">NextShop</a>
+              <a className="text-lg font-bold">CoffeeShop</a>
             </Link>
             <div>
-              <Link href="/crypto">
-                <a className="p-4">Crypto</a>
+              <Link href="/crypto" className="p-4">
+                Crypto
               </Link>
+            </div>
+            <div>
               <Link href="/cart">
                 <a className="p-4">
                   Cart
@@ -98,8 +100,8 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner bg-red-100">
-          <p>Copyright &copy; 2022 NextShop </p>
+        <footer className="flex h-10 justify-center items-center shadow-inner bg-blue-300">
+          <p>Copyright &copy; 2022 CoffeeShop Jaloliddin </p>
         </footer>
       </div>
     </div>

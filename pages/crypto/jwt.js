@@ -52,7 +52,7 @@ export default function JwtScreen() {
             id="input"
             className="w-full bg-gray-50"
             autoFocus
-            placeholder="텍스트를 입력하세요"
+            placeholder="Iltimos matnni kiriting"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           ></input>

@@ -52,30 +52,27 @@ export default function ProductScreen() {
             <li>
               <h1 className="text-lg">{product.name}</h1>
             </li>
-            <li>Category: {product.category} </li>
+            <li>Bo'limlar: {product.category} </li>
             <li>Brand: {product.brand}</li>
             <li>
               {product.rating} of {product.numReviews} reviews
             </li>
-            <li>Description: {product.description}</li>
+            <li>Batafsil: {product.description}</li>
           </ul>
         </div>
 
         <div>
           <div className="card p-5">
             <div className="mb-2 flex justify-between">
-              <div>Price</div>
+              <div>Narx</div>
               <div>${product.price}</div>
             </div>
-            <div className="mb-2 flex justify-between">
-              <div>Status</div>
-              <div>{product.countInStock > 0 ? 'In Stock' : 'Unavailable'}</div>
-            </div>
+
             <button
               className="primary-button w-full"
               onClick={addToCartHandler}
             >
-              Add to cart
+              Savatga olish
             </button>
           </div>
         </div>

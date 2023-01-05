@@ -17,7 +17,9 @@ export default function Rsaenc() {
   const [q, setQ] = useState()
   const [e, setE] = useState()
   const [d, setD] = useState()
-  const [plaintext, setPlaintext] = useState('Hello world - 헬로월드')
+  const [plaintext, setPlaintext] = useState(
+    'Hello world - 헬로월드 - Salom dunyo'
+  )
   const [ciphertext, setCiphertext] = useState('')
   const [ciphertextHex, setCiphertextHex] = useState('')
   const [recoveredtext, setRecoveredtext] = useState('')
@@ -52,18 +54,20 @@ export default function Rsaenc() {
     <Layout title="RSA-Enc">
       <form className="mx-auto max-w-screen-lg">
         <h1 className="text-3xl mb-4 font-bold">
-          RSA Encryption (공개키 암호화)
+          RSA Encryption (Ommaviy kalitlar kriptografiyasi)
         </h1>
 
         <div className="mb-4 ">
           <p>
-            RSA는 공개키 암호시스템의 하나로, 암호화뿐만 아니라 전자서명이
-            가능한 최초의 알고리즘으로 알려져 있다. RSA가 갖는 전자서명 기능은
-            인증을 요구하는 전자 상거래 등에 RSA의 광범위한 활용을 가능하게
-            하였다. 1978년 로널드 라이베스트(Ron Rivest), 아디 샤미르(Adi
-            Shamir), 레너드 애들먼(Leonard Adleman)의 연구에 의해
-            체계화되었으며, RSA라는 이름은 이들 3명의 이름 앞글자를 딴 것이다.
-            이 세 발명자는 이 공로로 2002년 튜링상을 수상했다.
+            RSA ommaviy kalitli kriptosistemalardan biri bo'lib, nafaqat
+            shifrlash, balki raqamli imzolar ham U birinchi mumkin bo'lgan
+            algoritm sifatida tanilgan. RSA ning elektron raqamli imzo
+            funksiyasi Sertifikatlashni talab qiladigan elektron tijorat kabi
+            RSAdan keng foydalanishni yoqish Bo'lgan edi. 1978 Ron Rivest, Adi
+            Shamir Shamir, Leonard Adlemanning tadqiqotlari bo`yicha.
+            Sistemalashtirilgan, nomi RSA bu uch kishining prefiksi hisoblanadi.
+            Uch ixtirochi o`z faoliyati uchun 2002 yilgi Turing mukofotiga
+            sazovor bo`lgan.
           </p>
           {/* <div className="mx-auto px-20">
             <Image src={rsakeyPic} alt="RSA key generation" />
@@ -97,13 +101,13 @@ export default function Rsaenc() {
             type="button"
             onClick={keyGen}
           >
-            RSA key generation (RSA 키 생성)
+            RSA key generation (RSA Kalitni yaratish)
           </button>
         </div>
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Public Key (공개키)
+            Public Key (Ochiq kalit)
           </label>
           <textarea
             type="text"
@@ -119,7 +123,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Private Key (개인키)
+            Private Key (Shaxsiy kalit)
           </label>
           <textarea
             type="text"
@@ -135,7 +139,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="n" className="mb-3 font-bold">
-            키 상세 정보 n=pq
+            Kalit tafsilotlar n=pq
           </label>
           <textarea
             type="text"
@@ -151,7 +155,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="p" className="mb-3 font-bold">
-            키 상세 정보 p
+            Kalit tafsilotlar p
           </label>
           <textarea
             type="text"
@@ -167,7 +171,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="q" className="mb-3 font-bold">
-            키 상세 정보 q
+            Kalit tafsilotlar q
           </label>
           <textarea
             type="text"
@@ -183,7 +187,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="n" className="mb-3 font-bold">
-            키 상세 정보 e
+            Kalit tafsilotlar e
           </label>
           <input
             type="text"
@@ -197,7 +201,7 @@ export default function Rsaenc() {
 
         <div className="mb-4">
           <label htmlFor="d" className="mb-3 font-bold">
-            키 상세 정보 d
+            Kalit tafsilotlar d
           </label>
           <textarea
             type="text"
@@ -233,7 +237,7 @@ export default function Rsaenc() {
             type="button"
             onClick={encryptHandler}
           >
-            Encrypt (암호화)
+            Encrypt (shifrlash)
           </button>
         </div>
 
@@ -259,7 +263,7 @@ export default function Rsaenc() {
             type="button"
             onClick={decryptHandler}
           >
-            Decrypt (복호화)
+            Decrypt (shifrlash)
           </button>
         </div>
 

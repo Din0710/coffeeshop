@@ -9,8 +9,8 @@ import { computeHmac } from '../../utils/crypto-functions'
 export default function HmacScreen() {
   const algorithms = ['md5', 'sha1', 'sha256', 'sha384', 'sha512']
   const [algorithm, setAlgorithm] = useState('sha256')
-  const [secret, setSecret] = useState('비밀공유키-lfdkjds')
-  const [inputText, setInputText] = useState('기본 입력 텍스트')
+  const [secret, setSecret] = useState('Maxfiy bolishilgan kalit-lfdkjds')
+  const [inputText, setInputText] = useState('Andoza kirish matni')
   const [hmacValue1, setHmacValue1] = useState('')
   const [hmacValue2, setHmacValue2] = useState('')
 
@@ -31,7 +31,9 @@ export default function HmacScreen() {
   return (
     <Layout title="HMAC">
       <form className="mx-auto max-w-screen-lg">
-        <h1 className="text-3xl mb-4 font-bold">HMAC (메시지인증코드) </h1>
+        <h1 className="text-3xl mb-4 font-bold">
+          HMAC (Xabarni tasdiqlash kodi){' '}
+        </h1>
 
         <div className="mb-4 flex flex-row">
           <div className="basis-1/2">

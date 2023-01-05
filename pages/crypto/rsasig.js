@@ -17,7 +17,9 @@ export default function RSASigScreen() {
   const [privateKey, setPrivateKey] = useState('')
   const [privateKeyPem, setPrivateKeyPem] = useState('')
 
-  const [plaintext, setPlaintext] = useState('Hello world - 헬로월드')
+  const [plaintext, setPlaintext] = useState(
+    'Hello world - 헬로월드 = Salom dunyo'
+  )
   const [signature, setSignature] = useState('')
   const [signatureHex, setSignatureHex] = useState('')
   const [result, setResult] = useState('')
@@ -52,23 +54,27 @@ export default function RSASigScreen() {
     let md = forge.md.sha256.create()
     md.update(plaintext, 'utf8')
     let verified = publicKey.verify(md.digest().bytes(), signature, pss)
-    setResult(verified ? '서명 검증 OK' : '서명 Error')
+    setResult(verified ? 'Imzoni tasdiqlash OK' : 'Imzo Error')
   }
 
   return (
     <Layout title="RSA-Sig">
       <form className="mx-auto max-w-screen-lg">
-        <h1 className="text-3xl mb-4 font-bold">RSA Signature (전자서명)</h1>
+        <h1 className="text-3xl mb-4 font-bold">
+          RSA Signature (Elektron raqamli imzolar)
+        </h1>
 
         <div className="mb-4 ">
           <p>
-            RSA는 공개키 암호시스템의 하나로, 암호화뿐만 아니라 전자서명이
-            가능한 최초의 알고리즘으로 알려져 있다. RSA가 갖는 전자서명 기능은
-            인증을 요구하는 전자 상거래 등에 RSA의 광범위한 활용을 가능하게
-            하였다. 1978년 로널드 라이베스트(Ron Rivest), 아디 샤미르(Adi
-            Shamir), 레너드 애들먼(Leonard Adleman)의 연구에 의해
-            체계화되었으며, RSA라는 이름은 이들 3명의 이름 앞글자를 딴 것이다.
-            이 세 발명자는 이 공로로 2002년 튜링상을 수상했다.
+            RSA ommaviy kalitli kriptosistemalardan biri bo'lib, nafaqat
+            shifrlash, balki raqamli imzolar ham U birinchi mumkin bo'lgan
+            algoritm sifatida tanilgan. RSA ning elektron raqamli imzo
+            funksiyasi Sertifikatlashni talab qiladigan elektron tijorat kabi
+            RSAdan keng foydalanishni yoqish Bo'lgan edi. 1978 Ron Rivest, Adi
+            Shamir Shamir, Leonard Adlemanning tadqiqotlari bo'yicha.
+            Sistemalashtirilgan, nomi RSA bu uch kishining prefiksi hisoblanadi.
+            Uch ixtirochi o'z faoliyati uchun 2002 yilgi Turing mukofotiga
+            sazovor bo'lgan
           </p>
           {/* <div className="mx-auto px-20">
             <Image src={rsakeyPic} alt="RSA key generation" />
@@ -102,13 +108,13 @@ export default function RSASigScreen() {
             type="button"
             onClick={keyGen}
           >
-            RSA key generation (RSA 키 생성)
+            RSA key generation (RSA Kalitni yaratish)
           </button>
         </div>
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Public Key (공개키)
+            Public Key (Ochiq kalit)
           </label>
           <textarea
             type="text"
@@ -124,7 +130,7 @@ export default function RSASigScreen() {
 
         <div className="mb-4">
           <label htmlFor="key" className="mb-3 font-bold">
-            Private Key (개인키)
+            Private Key (Shaxsiy kalit)
           </label>
           <textarea
             type="text"
@@ -160,7 +166,7 @@ export default function RSASigScreen() {
             type="button"
             onClick={signHandler}
           >
-            Signing (전자서명 생성)
+            Signing (Elektron raqamli imzo yaratish)
           </button>
         </div>
 
@@ -186,7 +192,7 @@ export default function RSASigScreen() {
             type="button"
             onClick={verifyHandler}
           >
-            Verification (전자서명 검증)
+            Verification (Elektron raqamli imzoni tasdiqlash)
           </button>
         </div>
 

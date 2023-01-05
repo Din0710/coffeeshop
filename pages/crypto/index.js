@@ -6,19 +6,19 @@ export default function Crypto() {
   return (
     <Layout title="Crypto">
       <h1 className="mb-4 text-2xl text-center">
-        Crypto Test (암호 알고리즘 테스트)
+        Crypto Test (Shifrlash algoritm tets)
       </h1>
       <div className="mx-auto max-w-screen-sm ">
         <div className="button-link">
           <Link href="crypto/hash">
-            <a className="text-lg"> Hash Function - 해시함수 </a>
+            <a className="text-lg"> Hash Function - Hash funksiyasi </a>
           </Link>
         </div>
 
         <div className="button-link">
           <Link href="crypto/hmac">
             <a className="text-lg">
-              Message Authentication Code (HMAC) - 메시지인증코드
+              Message Authentication Code (HMAC) - SMS Kodi
             </a>
           </Link>
         </div>
@@ -26,32 +26,36 @@ export default function Crypto() {
         <div className="button-link">
           <Link href="crypto/pbkdf2">
             <a className="text-lg">
-              Password-based Key Derivation Function - 패스워드 기반 키생성
+              Password-based Key Derivation Function - Parolga asoslangan kalit
             </a>
           </Link>
         </div>
 
         <div className="button-link">
           <Link href="crypto/passwordHash">
-            <a className="text-lg">Password Hash Salting - 패스워드해시</a>
+            <a className="text-lg">Password Hash Salting - Parol hash</a>
           </Link>
         </div>
 
         <div className="button-link">
           <Link href="crypto/aes">
-            <a className=" text-xl">AES encryption - 대칭키 암호 </a>
+            <a className=" text-xl">AES encryption - Shifrlash </a>
           </Link>
         </div>
 
         <div className="button-link">
           <Link href="crypto/rsaenc">
-            <a className=" text-xl">RSA encryption - 공개키 암호 </a>
+            <a className=" text-xl">
+              RSA encryption - Ommaviy kalitlar kriptografiyasi{' '}
+            </a>
           </Link>
         </div>
 
         <div className="button-link">
           <Link href="crypto/rsasig">
-            <a className=" text-xl">RSA signature - 전자서명 </a>
+            <a className=" text-xl">
+              RSA signature - Elektron raqamli imzolar{' '}
+            </a>
           </Link>
         </div>
 
@@ -63,7 +67,7 @@ export default function Crypto() {
 
         <div className="button-link">
           <Link href="crypto/cert">
-            <a className=" text-xl">Certificate - 인증서 </a>
+            <a className=" text-xl">Certificate - sertifikat </a>
           </Link>
         </div>
       </div>

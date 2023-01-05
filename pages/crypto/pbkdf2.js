@@ -35,18 +35,21 @@ export default function Pbkdf2Screen() {
     <Layout title="PBKDF2">
       <form className="mx-auto max-w-screen-lg">
         <h1 className="text-3xl mb-4 font-bold">
-          PBKDF2 (패스워드 기반 키생성)
+          PBKDF2 (Maxfiy kalit yaratish)
         </h1>
 
         <div className="mb-4">
           <p>
-            사용자가 입력하는 패스워드를 직접 비밀키로 사용하는 것은 고정된 키를
-            사용하게 되어 사전공격 등의 방법이 가능하므로 보안성에 문제가 많다.
-            이를 해결하기 위하여 패스워드 기반 키생성함수(PBKDF2)를 이용하는데
-            (1)사용자 입력의 패스워드, (2)랜덤한 salt값,
-            (3)반복횟수(iteration)값을 이용하여 난수처럼 보이는 암호키를
-            생성하여 사용한다. salt값과 반복횟수값은 공격자의 사전공격을 어렵게
-            하는 중요한 요소이다.
+            Foydalanuvchi tomonidan kiritilgan paroldan xususiy kalit sifatida
+            foydalanish to'g'ridan-to'g'ri sobit kalit ekanligini anglatadi Uni
+            ishlatish mumkin bo'lganligi sababli, lug'at hujumlari kabi usullar
+            mumkin, shuning uchun xavfsizlik bilan bog'liq ko'plab muammolar
+            mavjud. Buni yechish uchun biz parol asosidagi kalitni generatlash
+            funksiyasini (PBKDF2) ishlatamiz. 1 Foydalanuvchi kirishining
+            paroli, 2 Tasodifiy tuz qiymati, 3 iteratsiya qiymati yordamida
+            tasodifiy songa o'xshagan shifrlash kaliti yaratish va undan
+            foydalanish. Tuz qiymati va iteratsiyalar soni hujumchiga oldindan
+            hujum qilishni qiyinlashtiradi. muhim ahamiyat kasb etadi.
           </p>
           <Image src={pbkdf2Pic} alt="pbkdf2" />
         </div>
