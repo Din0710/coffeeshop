@@ -83,8 +83,8 @@ export default function AESScreen() {
           <p>
             Simmetrik kalit shifr shifri shifrlash algoritmi va deshifrlash
             algoritmida bir xil kalit hisoblanadi. foydalanish algoritmi
-            hisoblanadi. Jo'natuvchi umuman tasodifiy son avlod funksiyasini
-            qo'llaydi U tasodifiy hosil bo'lgan kalit yordamida shifrlanadi, uni
+            hisoblanadi. Jonatuvchi umuman tasodifiy son avlod funksiyasini
+            qollaydi U tasodifiy hosil bolgan kalit yordamida shifrlanadi, uni
             yuboruvchi qabul qiluvchiga beradi Eson-omon etkazib berilishi
             kerak.
           </p>

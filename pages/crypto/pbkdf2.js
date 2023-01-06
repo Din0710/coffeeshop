@@ -41,13 +41,13 @@ export default function Pbkdf2Screen() {
         <div className="mb-4">
           <p>
             Foydalanuvchi tomonidan kiritilgan paroldan xususiy kalit sifatida
-            foydalanish to'g'ridan-to'g'ri sobit kalit ekanligini anglatadi Uni
-            ishlatish mumkin bo'lganligi sababli, lug'at hujumlari kabi usullar
-            mumkin, shuning uchun xavfsizlik bilan bog'liq ko'plab muammolar
+            foydalanish togridan-togri sobit kalit ekanligini anglatadi Uni
+            ishlatish mumkin bolganligi sababli, lugat hujumlari kabi usullar
+            mumkin, shuning uchun xavfsizlik bilan bogliq koplab muammolar
             mavjud. Buni yechish uchun biz parol asosidagi kalitni generatlash
             funksiyasini (PBKDF2) ishlatamiz. 1 Foydalanuvchi kirishining
             paroli, 2 Tasodifiy tuz qiymati, 3 iteratsiya qiymati yordamida
-            tasodifiy songa o'xshagan shifrlash kaliti yaratish va undan
+            tasodifiy songa o`xshagan shifrlash kaliti yaratish va undan
             foydalanish. Tuz qiymati va iteratsiyalar soni hujumchiga oldindan
             hujum qilishni qiyinlashtiradi. muhim ahamiyat kasb etadi.
           </p>

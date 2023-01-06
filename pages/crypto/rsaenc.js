@@ -59,14 +59,14 @@ export default function Rsaenc() {
 
         <div className="mb-4 ">
           <p>
-            RSA ommaviy kalitli kriptosistemalardan biri bo'lib, nafaqat
-            shifrlash, balki raqamli imzolar ham U birinchi mumkin bo'lgan
+            RSA ommaviy kalitli kriptosistemalardan biri bolib, nafaqat
+            shifrlash, balki raqamli imzolar ham U birinchi mumkin bolgan
             algoritm sifatida tanilgan. RSA ning elektron raqamli imzo
             funksiyasi Sertifikatlashni talab qiladigan elektron tijorat kabi
-            RSAdan keng foydalanishni yoqish Bo'lgan edi. 1978 Ron Rivest, Adi
-            Shamir Shamir, Leonard Adlemanning tadqiqotlari bo`yicha.
+            RSAdan keng foydalanishni yoqish Bolgan edi. 1978 Ron Rivest, Adi
+            Shamir Shamir, Leonard Adlemanning tadqiqotlari boyicha.
             Sistemalashtirilgan, nomi RSA bu uch kishining prefiksi hisoblanadi.
-            Uch ixtirochi o`z faoliyati uchun 2002 yilgi Turing mukofotiga
+            Uch ixtirochi oz faoliyati uchun 2002 yilgi Turing mukofotiga
             sazovor bo`lgan.
           </p>
           {/* <div className="mx-auto px-20">

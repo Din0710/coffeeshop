@@ -39,9 +39,9 @@ export default function CertScreen() {
     const publicKeyPem = pki.publicKeyToPem(pbk)
     const privateKeyPem = pki.privateKeyToPem(prk)
 
-    setPublicKey(pbk)
+    setPublicKey(publicKey)
     setPublicKeyPem(publicKeyPem)
-    setPrivateKey(prk)
+    setPrivateKey(privateKey)
     setPrivateKeyPem(privateKeyPem)
     localStorage.setItem('privateKeyPem', privateKeyPem)
   }
@@ -89,7 +89,7 @@ export default function CertScreen() {
         <div className="mb-4 ">
           <p>
             Guvohnoma — shaxsning ochiq kaliti va shaxsiy shaxsni tasdiqlovchi
-            ma'lumotlari sertifikatlashtirish organi tomonidan imzolangan
+            malumotlari sertifikatlashtirish organi tomonidan imzolangan
             guvohnoma. chiqariladigan hujjatdir.
           </p>
           <div className="mb-4 flex flex-row">

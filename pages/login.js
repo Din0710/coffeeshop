@@ -134,7 +134,7 @@ export default function LoginScreen() {
           </div>
 
           <div className="mb-4">
-            Akauntiz yuqmi? <Link href="register">Ro'yxtdan o'ting</Link>
+            Akauntiz yuqmi? <Link href="register">Royxtdan oting</Link>
           </div>
         </div>
         <div className="p-5 rounded-lg">

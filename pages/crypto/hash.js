@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Layout from '../../components/Layout'
-import forge from 'node-forge'
 import axios from 'axios'
 import hashPic from '../../public/img/hash.jpg'
 import { computeHash } from '../../utils/crypto-functions'

@@ -29,7 +29,7 @@ function CartScreen() {
       <h1 className="mb-4 text-xl">Savat</h1>
       {cartItems.length === 0 ? (
         <div>
-          Savat bo'sh. <Link href="/"> Savdoga marhamat </Link>{' '}
+          Savat bosh. <Link href="/"> Savdoga marhamat </Link>{' '}
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">

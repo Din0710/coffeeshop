@@ -52,7 +52,7 @@ export default function ProductScreen() {
             <li>
               <h1 className="text-lg">{product.name}</h1>
             </li>
-            <li>Bo'limlar: {product.category} </li>
+            <li>Bolimlar: {product.category} </li>
             <li>Brand: {product.brand}</li>
             <li>
               {product.rating} of {product.numReviews} reviews

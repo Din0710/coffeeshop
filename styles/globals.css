@@ -32,7 +32,7 @@ a {
 }
 
 .button-link {
-  @apply bg-blue-300 hover:bg-blue-200 p-2 m-2 rounded-md mb-4 text-center;
+  @apply bg-blue-300 hover:bg-blue-200 p-2 m-2 rounded-md mb-4 text-center active:bg-blue-500;
 }
 
 input,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Layout from '../../components/Layout'
 import Image from 'next/image'
-import bcryptPic from '../../public/bcrypt.jpg'
+import bcryptPic from '../../public/img/bcrypt.jpg'
 import bcrypt from 'bcryptjs'
 import axios from 'axios'
 
@@ -80,7 +80,7 @@ export default function PasswordHashScreen() {
             name="hpassword"
             id="hpassword"
             className="w-full bg-gray-50"
-            defaultValue={hpassword}
+            defaultValue={password}
           />
         </div>
 
@@ -115,7 +115,7 @@ export default function PasswordHashScreen() {
             <p>Login password: {password1}</p>
             <p className="text-red-700 font-bold">
               Login result (client-side):{' '}
-              {result ? '로그인 성공' : '로그인 실패'}
+              {result2 ? '로그인 성공' : '로그인 실패'}
             </p>
             <p className="text-red-700 font-bold">
               Login result (server-side):{' '}
