@@ -54,7 +54,7 @@ const data = {
       name: 'Vanilla',
       slug: 'starbucks2',
       category: 'Coffee',
-      image: '/images/vanilla.jpg',
+      image: '/images/vanil la.jpg',
       price: 5,
       brand: 'Starbucks',
       rating: 2.9,
